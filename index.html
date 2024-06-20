@@ -3,83 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naura Konversi Suhu</title>
+    <title>Naura</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Website Konversi Suhu</h1>
-    </header>
 
-    <main>
+    <div class="container">
+        <h2>Website Kalkulator Suhu</h2>
+        <p>Masukkan suhu derajat  Celsius (&deg; C) ke kotak dibawah, lalu klik tombol Konversi
+            untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (&deg;F)</p>
+        <div class="form-group">
+            <label for="temperature">Celsius (&deg; C):</label>
+            <input type="number" id="temperature" placeholder="Enter temperature..." required>
+        </div>
+        <div class="form-group">
+            <label for="unit">Select Unit:</label>
+            <select id="unit">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+            </select>
+        </div>
+        <div class="btn-group">
+            <button id="convertBtn">Konversi</button>
+            <button id="reverseBtn">Reverse</button>
+            <button id="resetBtn">Reset</button>
+        </div>
 
-        <p>Masukkan suhu derajat Celcius (&deg;C) </p>
 
-        <!-- section celcius-->
-        <section class="celcius">
-            <header>
-                <h3>Celcius (&deg;C) : </h3>
-            </header>
+    <section>
+        <p>Fahrenheit (&deg; F)</p>
+        <div class="result">
+            <p id="conversionResult"></p>
+        </div>
+    </section>
 
-            <section>
-                <textarea></textarea>
-            </section>
 
-            <section>
-                <button class="button1">Konversi</button>
-                <button class="button2">Reset</button>
-                <button class="button3">Reverse</button>
-            </section>
+    <section>
+        <p>Cara Kalkulasi : </p>
+        <div class="result">
+            <p id="conversionResult"></p>
+            <textarea id="kalkulasiText" rows="4" readonly></textarea>
+        </div>
+    </section>
+        
 
-        </section>
+        <div>
+            <h2>cara Konversi Dari Celsius (&deg;C) ke Fahrenheit (&deg;F)</h2>
+            <p> Suhu <span>S</span> dalam derajat fahrenheit (&deg;F) sama dengan suhu <span>S</span> dalam derajat 
+            Celcius (&deg;C) kali 9/5 tambah 32</p>
 
-        <section class="fahren">
-            <section>
-                <h3>Fahrenheit (&deg;F) : </h3>
-    
-                <section>
-                    <textarea></textarea>
-                </section>
-            </section>
-    
-            <!-- section calculate -->
-             <section>
-                <header>
-                    <h3>Conversation Calculate </h3>
-                </header>
-    
-                <section>
-                    <textarea></textarea>
-                </section>
-             </section>
-        </section>
+            <p><span>S</span>(&deg;F) = (<span>S</span>(&deg;C) * 9/5) + 32</p>
 
-<hr>
+            <p>atau</p>
 
-         <!-- section formula -->
-          <section>
-            <header>
-                <h1>Cara konversi dari celcius (&deg;C) ke Fahrenheit (&deg;F)  </h1>
-            </header> 
+            <p><span>S</span>(&deg;F) = (<span>S</span>(&deg;C) * 1.8) + 32</p>
 
-            <p>suhu <span class="subject-info">S</span> dalam derajat Fahrenheit (&deg;F) sama 
-                <span class="subject-info">S</span> dengan suhu dalam derajat Celcius (&deg;C)  </p>
-          
-            <p>
-                <span class="subject-info">S</span><sub>(&deg;F)</sub> = (<span 
-                class="subject-info">S</span><sub>(&deg;C)</sub> * 9/5) + 32  
-            </p>
-
-            <p>
-                <span class="subject-info">S</span><sub>(&deg;C)</sub> = (<span 
-                class="subject-info">S</span><sub>(&deg;F)</sub> -32 ) / 1.8
-            </p>
-            </section>
-
-          
-
-    </main>
-
+        </div>
+    </div>
 
     <script src="js/script.js"></script>
 </body>
