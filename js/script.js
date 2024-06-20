@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Selecting elements
     const temperatureInput = document.getElementById('temperature');
     const unitSelect = document.getElementById('unit');
     const convertBtn = document.getElementById('convertBtn');
